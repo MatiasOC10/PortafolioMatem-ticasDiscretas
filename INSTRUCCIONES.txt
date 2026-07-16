@@ -1,0 +1,9 @@
+ACTUALIZACIÓN: INTRODUCCIONES Y GRÁFICOS
+
+Reemplaza en tu repositorio los siguientes archivos:
+- index.html
+- js/app.js
+- css/styles.css
+
+No cambies ni elimines la carpeta pdfs.
+Después confirma los cambios con Commit changes y actualiza la web con Ctrl + F5.
