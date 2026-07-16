@@ -150,7 +150,7 @@ function renderUnitOverview(unit) {
     <div class="unit-overview">
       <div class="overview-copy">
         <p class="overview-kicker">Introducción a la unidad</p>
-        <h4>¿Qué aprenderás?</h4>
+        <h4>¿Qué se aprendió?</h4>
         <p class="overview-intro">${content.intro}</p>
 
         <div class="objective-box">
