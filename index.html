@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio digital del Ciclo 1 de Matemáticas Discretas, organizado en tres unidades.">
+  <meta name="theme-color" content="#071427">
+  <title>Matemáticas Discretas · Ciclo 1</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner shell">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">∑</span>
+        <span>
+          <strong>Matemáticas Discretas</strong>
+          <small>Ciclo 1 · Portafolio digital</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#unidad-1">Unidad 1</a>
+        <a href="#unidad-2">Unidad 2</a>
+        <a href="#unidad-3">Unidad 3</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Universidad Nacional de Loja</p>
+          <h1>Un ciclo completo,<br><span>bien organizado.</span></h1>
+          <p class="hero-text">Consulta los documentos de Matemáticas Discretas por unidad. Puedes buscar, abrir o descargar cada PDF conservando su nombre original.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#biblioteca">Explorar biblioteca</a>
+            <a class="button button-ghost" href="#unidad-3">Ver última unidad</a>
+          </div>
+
+          <dl class="stats" aria-label="Resumen del portafolio">
+            <div><dt id="totalDocs">18</dt><dd>documentos</dd></div>
+            <div><dt>3</dt><dd>unidades</dd></div>
+            <div><dt>PDF</dt><dd>formato</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="formula formula-a">P → Q</div>
+          <div class="formula formula-b">G = (V, E)</div>
+          <div class="formula formula-c">A + Ā = 1</div>
+          <svg viewBox="0 0 560 520" role="presentation">
+            <defs>
+              <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#6ee7ff"/>
+                <stop offset="1" stop-color="#9d7cff"/>
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#lineGradient)" stroke-width="3" opacity=".9">
+              <path d="M105 190L225 98L357 167L455 86"/>
+              <path d="M105 190L198 306L355 287L455 86"/>
+              <path d="M198 306L282 424L355 287"/>
+              <path d="M225 98L355 287"/>
+            </g>
+            <g fill="#071427" stroke="#8ce8ff" stroke-width="5">
+              <circle cx="105" cy="190" r="23"/>
+              <circle cx="225" cy="98" r="18"/>
+              <circle cx="357" cy="167" r="25"/>
+              <circle cx="455" cy="86" r="17"/>
+              <circle cx="198" cy="306" r="22"/>
+              <circle cx="355" cy="287" r="19"/>
+              <circle cx="282" cy="424" r="25"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="library shell" id="biblioteca" aria-labelledby="library-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Biblioteca del ciclo</p>
+          <h2 id="library-title">Documentos por unidad</h2>
+        </div>
+        <div class="search-wrap">
+          <label class="sr-only" for="searchInput">Buscar documentos</label>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+          <input id="searchInput" type="search" placeholder="Buscar por nombre…" autocomplete="off">
+          <kbd>/</kbd>
+        </div>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filtrar documentos">
+        <button class="filter-chip is-active" type="button" data-filter="all">Todos</button>
+        <button class="filter-chip" type="button" data-filter="AA">AA</button>
+        <button class="filter-chip" type="button" data-filter="ACD">ACD</button>
+        <button class="filter-chip" type="button" data-filter="APE">APE</button>
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+      </div>
+
+      <div id="unitsContainer"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span aria-hidden="true">∅</span>
+        <h3>No encontramos ese documento</h3>
+        <p>Prueba con otra palabra o limpia los filtros.</p>
+        <button class="button button-primary" id="clearFilters" type="button">Limpiar búsqueda</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p><strong>Matemáticas Discretas</strong> · Ciclo 1</p>
+      <p>Portafolio académico organizado en 3 unidades.</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript">Activa JavaScript para visualizar la biblioteca de documentos.</div>
+  </noscript>
+</body>
+</html>
