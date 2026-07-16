@@ -47,5 +47,3 @@ Después visita `http://localhost:8000`.
 - Botones para abrir y descargar.
 - Diseño adaptable a celular y computadora.
 - Tema claro y oscuro.
-
-Página configurada con GitHub Pages.
