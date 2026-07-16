@@ -175,6 +175,7 @@
       "description": "Teoría de grafos, algoritmos de búsqueda, árboles y aplicaciones computacionales.",
       "files": [
         "AA TEORÍA DE GRAFOS(1).pdf",
+        "AA2 ÁRBOLES.pdf",
         "ACD TEORÍA DE GRAFOS(1).pdf",
         "ACD ÁRBOLES(1).pdf",
         "APE FASE 1-5 VERSIÓN 1(1).pdf",
@@ -188,6 +189,16 @@
           "size": "786.4 KB",
           "bytes": 805290,
           "pages": 22,
+          "unitId": "unidad-3",
+          "unitTitle": "Unidad 3"
+        },
+        {
+          "name": "AA2 ÁRBOLES.pdf",
+          "category": "AA",
+          "path": "pdfs/unidad-3/AA2 ÁRBOLES.pdf",
+          "size": "861.1 KB",
+          "bytes": 881781,
+          "pages": 28,
           "unitId": "unidad-3",
           "unitTitle": "Unidad 3"
         },
@@ -232,8 +243,8 @@
           "unitTitle": "Unidad 3"
         }
       ],
-      "count": 5
+      "count": 6
     }
   ],
-  "totalDocuments": 18
+  "totalDocuments": 19
 }

@@ -1,9 +1,15 @@
-ACTUALIZACIÓN: INTRODUCCIONES Y GRÁFICOS
+ACTUALIZACIÓN: AA2 ÁRBOLES.pdf EN UNIDAD 3
 
-Reemplaza en tu repositorio los siguientes archivos:
-- index.html
-- js/app.js
-- css/styles.css
+Sube o reemplaza estos archivos en tu repositorio manteniendo exactamente las carpetas:
 
-No cambies ni elimines la carpeta pdfs.
-Después confirma los cambios con Commit changes y actualiza la web con Ctrl + F5.
+1. index.html
+2. documentos.json
+3. js/app.js
+4. pdfs/unidad-3/AA2 ÁRBOLES.pdf
+
+Después:
+- Pulsa Commit changes.
+- Espera a que GitHub Pages termine de publicar.
+- Actualiza la página con Ctrl + F5.
+
+La Unidad 3 pasará de 5 a 6 archivos y el portafolio completo de 18 a 19 documentos.
