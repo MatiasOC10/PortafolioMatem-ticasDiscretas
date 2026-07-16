@@ -31,7 +31,7 @@ function createCard(doc) {
     <article class="document-card" data-category="${doc.category}" data-name="${normalize(doc.name)}">
       <div class="pdf-icon" aria-hidden="true">PDF</div>
       <div class="document-info">
-        <h4 class="document-name">${doc.name}</h4>
+        <h4 class="document-name">${doc.name.replace(/\(\d+\)(?=\.pdf$)/i, '')}</h4>
         <div class="document-meta">
           <span class="category-badge">${doc.category}</span>
           <span>${pages}</span>
